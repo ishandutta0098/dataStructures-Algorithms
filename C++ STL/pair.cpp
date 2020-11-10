@@ -3,19 +3,19 @@ using namespace std;
 	
 	void ExplainPair() 
 	{
+	    //1. DECLARE PAIR:
+	    pair<int, int> p1 = {1,3};
 	    
-	    //pair<int, int> p1 = {1,3};
-	    
-	    //cout<<p1.first<<" "<<p1.second<<endl;
+	    cout<<p1.first<<" "<<p1.second<<endl;
 	    //prints 1 2 
 	    
-	    //PAIR OF PAIR:
+	    //2. PAIR OF PAIR:
 	    //pair<int, pair<int, int>> p2 = {1, {3,4}};
 	    
-	    //cout<<p2.first<<" "<<p2.second.second<<" "<<p2.second.first<<endl;
+	    cout<<p2.first<<" "<<p2.second.second<<" "<<p2.second.first<<endl;
 	    //prints 1 4 3 
 	    
-	    //PAIR OF ARRAY:
+	    //3. PAIR OF ARRAY:
 	    pair<int, int> arr[] = {{1,2}, {3,4}, {5,6}};
 	    
 	    cout<<arr[1].second;
