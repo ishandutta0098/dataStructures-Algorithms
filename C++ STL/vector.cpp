@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-
 	
 	void ExplainVector() 
 	{
@@ -65,7 +63,55 @@ using namespace std;
 	            for(auto : v5) {
 	                cout << it << " "; //prints 10 20 30 40
 	            }
-	}
+	            
+	   //7. ERASE
+	   
+	        vector<int> v6{10,20,30,40,50,60}
+	   
+	        //7.1 ERASE FIRST ELEMENT
+	        v5.erase(v5.begin());  //{20 30 40 50 60}
+	        
+	        //7.2 ERASE SECOND ELEMENT
+	        v5.erase(v5.begin() + 1); //{10 30 40 50 60}
+	        
+	        //7.3 ERASE IN A RANGE (Excludes last element of Range)
+	        v5.erase(v5.begin() + 2, v5.begin() + 4) //{10 20 50 60}
+	        
+	        //7.4 ERASE ENTIRE VECTOR
+	        v5.clear();
+	        
+	        //7.5 CHECK IF VECTOR IS EMPTY
+	        cout << v5.empty();
+	        
+	   //8. INSERT
+	   
+	        vector<int> v7(2,100); //{100 100}
+	        
+	        //8.1 INSERT AT BEGINNING
+	        v7.insert(v7.begin(), 300); //{300 100 100}
+	        
+	        //8.2 INSERT SAME ELEMENTS AT POSITION
+	        v7.insert(v7.begin() + 1, 2, 10); //{300 10 10 100 100}
+	        
+	        //8.3 INSERT A VECTOR IN VECTOR
+	        vector<int> copy(2,50); //{50 50}
+	        v7.insert(v7.begin(), copy.begin(), copy.end()); //{50 50 300 10 10 100 100}
+	        
+	   //9. SIZE
+	        vector<int> v8{10, 20};
+	        
+	        cout << v8.size(); //prints 2
+	        
+	   //10. POP
+	        v8.pop_back(); //{10} 
+	        
+	   //11. SWAP VECTORS
+	   
+	        vector<int> v9{10, 20};
+	        vector<int> v10{30, 40};
+	        
+	        v9.swap(v10);
+	    }
 	
 	
 	int main() {
