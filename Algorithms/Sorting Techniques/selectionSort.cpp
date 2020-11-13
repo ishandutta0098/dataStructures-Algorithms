@@ -21,12 +21,7 @@ void SelectionSort(vector<int> &arr, int n)
         
         swap(arr[MIN_IDX], arr[i]); //Swap the minimum value and put it in the sorted subarray.
         
-        for(auto it = arr.begin(); it < arr.end(); it++) 
-            cout << *(it) << " ";
-            
-        cout << "\n";
-        
-    }
+      }
 }
 
 
