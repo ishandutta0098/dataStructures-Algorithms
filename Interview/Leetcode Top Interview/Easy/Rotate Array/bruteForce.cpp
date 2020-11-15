@@ -1,4 +1,7 @@
 //ROTATE ARRAY
+//Time - O(n)
+//Space - O(n) - Another Array of Same size is used.
+
 
 //Given an array, rotate the array to the right by k steps, where k is non-negative.
 
@@ -21,4 +24,5 @@ public:
 
 
 
+ 
  
