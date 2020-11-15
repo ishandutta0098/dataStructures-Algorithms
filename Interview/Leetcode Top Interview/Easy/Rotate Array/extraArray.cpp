@@ -13,7 +13,11 @@ public:
     void rotate(vector<int>& nums, int k) {
     
       vector<int> v1; //Second vector to store the required array.
-      
+      int n; 
+        
+      n = nums.size();
+        
+      k = k % n;
       for(int i = nums.size() - k; i < nums.size(); i++) 
        v1.push_back(v[i]);
     
