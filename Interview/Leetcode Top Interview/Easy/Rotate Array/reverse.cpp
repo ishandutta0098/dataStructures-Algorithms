@@ -17,7 +17,11 @@ using namespace std;
 int main()
 {
 vector<int> nums = {1, 2, 3, 4, 5, 6, 7};
-int k = 3;
+int k = 10;
+int n;
+n = nums.size();
+
+k = k % n; //This is the number of rotations that will be required, as after a certain point the patters repeats itself.
 
 reverse(nums.begin(), nums.end()); //Reverse entire array - {7 6 5 4 3 2 1}
 reverse(nums.begin(), nums.begin() + k); //Reverse the rotated part - {5 6 7 4 3 2 1}
