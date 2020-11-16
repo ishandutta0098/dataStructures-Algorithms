@@ -41,12 +41,12 @@ class Solution {
 int main() {
     
     Solution ob;
-    vector<int> digits = {0};
+    vector<int> digits = {8,9,7};
     
     digits = ob.plusOne(digits);
     
     for(auto it = digits.begin(); it < digits.end(); it++) {
-        cout << *(it) << " ";
+        cout << *(it) << " "; //prints 8 9 8
     }
     return 0;
 }
